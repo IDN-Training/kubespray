@@ -1,8 +1,20 @@
 # on node master
 - Copy ``inventory/sample`` as ``inventory/mycluster``
-- Update Ansible inventory file with inventory builder
-- Review and change parameters under ``inventory/mycluster/group_vars``
-- Test inventory
-- Deploy kubernetes cluster
-- (Opsional) Reset kubernetes cluster
+cp -rfp inventory/sample inventory/mycluster
 
+- Update Ansible inventory file with inventory builder
+declare -a IPS=(10.1.0.9 10.1.0.10 10.1.0.11)
+CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
+
+- Review and change parameters under ``inventory/mycluster/group_vars``
+cat inventory/mycluster/group_vars/all/all.yml
+cat inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml
+
+- Test inventory
+ansible all -i inventory/mycluster/hosts.yaml -m ping 
+
+- Deploy kubernetes cluster
+ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml
+
+- (Opsional) Reset kubernetes cluster
+ansible-playbook -i inventory/mycluster/hosts.yaml reset.yml
