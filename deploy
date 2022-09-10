@@ -1,0 +1,8 @@
+# on node master
+- Copy ``inventory/sample`` as ``inventory/mycluster``
+- Update Ansible inventory file with inventory builder
+- Review and change parameters under ``inventory/mycluster/group_vars``
+- Test inventory
+- Deploy kubernetes cluster
+- (Opsional) Reset kubernetes cluster
+

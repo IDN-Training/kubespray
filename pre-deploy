@@ -1,0 +1,11 @@
+# on node master
+- install python dependecies
+- install ansible
+- Configuration Ansible
+nano /etc/ansible/ansible.cfg
+[defaults]
+host_key_checking=False
+pipelining=True
+forks=100
+- download kubespray
+- install add on dependecies

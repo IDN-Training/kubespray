@@ -1,0 +1,16 @@
+# on all node server
+- set date & time
+- set hostname
+- update & upgrade repository
+- install sshpass
+- create user for deployment
+- add user to group sudo
+- edit visudo
+
+# on master node 
+- set hosts
+- config ssh
+- generate ssh key
+- create file list host
+- create file password
+- copy ssh key
