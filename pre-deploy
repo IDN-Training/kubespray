@@ -3,14 +3,7 @@
 sudo apt install python3-dev libffi-dev gcc libssl-dev && sudo apt install python3-pip && sudo pip3 install -U pip
 
 - install ansible
-sudo pip install ansible
-
-- Configuration Ansible
-nano /etc/ansible/ansible.cfg
-[defaults]
-host_key_checking=False
-pipelining=True
-forks=100
+sudo apt install ansible
 
 - download kubespray
 git clone https://github.com/rydrafi13/kubespray

@@ -11,10 +11,10 @@ cat inventory/mycluster/group_vars/all/all.yml
 cat inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml
 
 - Test inventory
-ansible all -i inventory/mycluster/hosts.yaml -m ping 
+ansible all -i inventory/mycluster/hosts.yaml -m ping -u root
 
 - Deploy kubernetes cluster
-ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml
+ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml -u root
 
 - (Opsional) Reset kubernetes cluster
-ansible-playbook -i inventory/mycluster/hosts.yaml reset.yml
+ansible-playbook -i inventory/mycluster/hosts.yaml reset.yml -u root
