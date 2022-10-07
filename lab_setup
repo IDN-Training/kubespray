@@ -1,4 +1,4 @@
-NOTE: Disini saya membuat Cluster Kubernetes menggunakan 3 Server (1 master, 2 worker)
+NOTE: Disini saya membuat Cluster Kubernetes menggunakan 3 Server (1 master, 2 worker), dan menggunakan pc saya sebagai deployment ansible
 
 Dengan spesifikasi server seperti berikut:
 - master

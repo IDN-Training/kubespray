@@ -21,7 +21,7 @@ sudo systemctl restart sshd
 - create password for root
 passwd root
 
-# on master node 
+# on ansible node 
 - set hosts
 10.1.0.9 master
 10.1.0.10 worker1
@@ -35,13 +35,13 @@ StrictHostKeyChecking no
 ssh-keygen -t rsa
 
 - create file list host
-vim hosts.txt
+vim hosts
 10.1.0.9
 10.1.0.10
 10.1.0.11
 
 - create file password
-echo "root" > pass.txt 
+echo "root" > pass
 
 - copy ssh key
 for hostname in `cat hosts.txt`; do sshpass -f pass.txt ssh-copy-id root@${hostname}; done

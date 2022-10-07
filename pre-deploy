@@ -1,4 +1,4 @@
-# on node master
+# on node ansible
 - install python dependecies
 sudo apt install python3-dev libffi-dev gcc libssl-dev && sudo apt install python3-pip && sudo pip3 install -U pip
 
