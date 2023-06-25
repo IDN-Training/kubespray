@@ -102,6 +102,5 @@ ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml --become
 
 ### (Opsional) Reset kubernetes cluster
 ```
-ansible-playbook -i inventory/mycluster/hosts.yaml reset.
-yml --become
+ansible-playbook -i inventory/mycluster/hosts.yaml reset.yml --become
 ```
