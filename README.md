@@ -1,0 +1,23 @@
+# kubespray-deploy
+Tutorial Kubernetes Deployment with Kubespray
+
+Kubernetes v1.26
+
+# Lab Server
+NOTE: Disini saya membuat Cluster Kubernetes menggunakan 3 Server (1 master, 2 worker), dan menggunakan node master saya sebagai deployment ansible
+
+Dengan spesifikasi server seperti berikut:
+- master
+2 CPU
+4 RAM
+2 NIC (public, private)
+
+- worker
+2 CPU
+4 RAM
+2 NIC (public, private)
+
+Dengan ip address server seperti berikut:
+- master (10.1.0.9)
+- worker1 (10.1.0.10)
+- worker2 (10.1.0.11)
