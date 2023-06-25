@@ -14,3 +14,9 @@ Dengan ip address server seperti berikut:
 - master (192.168.212.1)
 - worker1 (192.168.212.2)
 - worker2 (192.168.212.3)
+
+## Tutorial
+silahkan ikuti step per stepnya
+- Prepare Instalasi
+- Prepare Deployment
+- Deployment
